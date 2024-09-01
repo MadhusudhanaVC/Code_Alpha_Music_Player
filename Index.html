@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Based Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for music...">
+        </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist">
+                <!-- Dynamically populated list of songs -->
+            </ul>
+        </div>
+        <div class="upload-section">
+            <input type="file" id="file-upload" accept="audio/*" multiple>
+        </div>
+        <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="play-pause">Play</button>
+            <button id="next">Next</button>
+             <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+        </div>
+        <div class="current-track">
+            <img src="https://cdn-icons-png.flaticon.com/512/2402/2402463.png" width="10%" height="10%" />
+            <div id="track-info">
+                <h3 id="track-title">Title</h3>
+                <p id="track-artist">Artist</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+ <p Style="font-size :16px; font-weight:16 px; bold;"><strong>Design And Developed BY Madhusudhana V C, Student, School of CS And IT Department OF MCA, Jain(Deemed to be) University, Bengaluru, India.</strong></p>
+</html>
